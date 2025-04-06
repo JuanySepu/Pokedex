@@ -27,6 +27,7 @@ async function searchPokemon() {
             <p>Número: ${data.id}</p>
             <p>Altura: ${data.height / 10}m</p>
             <p>Peso: ${data.weight /10}kg</p>
+            <p>Tipo: ${data.types[0].type.name.toUpperCase()}</p>
         `
     } catch (error) {
         console.log(error);
